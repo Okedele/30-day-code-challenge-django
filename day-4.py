@@ -8,7 +8,6 @@ print(f"Initials: {first_name[0].upper()}.{last_name[0].upper()} \nName: {first_
 # ALPHABETIC TELEPHONE NUMBER TRANSLATOR
 telephone_number = input("Enter your telephone number in the format XXX-XXX-XXXX: ")
 telephone_number = telephone_number.lower()
-x = 0
 for i in telephone_number:
     if (i == 'a' or i == 'b' or i == 'c'):
         telephone_number = telephone_number.replace(i, '2')
@@ -26,5 +25,4 @@ for i in telephone_number:
         telephone_number = telephone_number.replace(i, '8')
     elif (i == 'w' or i == 'x' or i == 'y' or i == 'z'):
         telephone_number = telephone_number.replace(i, '9')
-    x += 1
 print(f"Your telephone number is {telephone_number}")
