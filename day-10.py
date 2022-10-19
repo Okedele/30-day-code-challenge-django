@@ -1,5 +1,6 @@
 # 'capital' QUIZ
 import random
+
 def capital():
 
     nigerian_states = [
@@ -85,13 +86,16 @@ def jupiter_moons():
     for radius in moon_radius:
         if radius["moon"].lower() == moon_name.lower():
             print(f"{radius['moon']} mean radius: {radius['radius']}km")
-    
+
     for gravity in moon_gravity:
         if gravity["moon"].lower() == moon_name.lower():
-            print(f"{gravity['moon']} surface gravity: {gravity['gravity']} meters per second squared")
-    
+            print(
+                f"{gravity['moon']} surface gravity: {gravity['gravity']} meters per second squared"
+            )
+
     for period in moon_orbital_period:
         if period["moon"].lower() == moon_name.lower():
             print(f"{period['moon']} orbital period: {period['period']} days")
+
 
 jupiter_moons()
