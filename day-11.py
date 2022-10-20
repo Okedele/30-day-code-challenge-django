@@ -9,6 +9,7 @@ def random_number_file_writer():
         random_number = random.randint(1, 500)
         file = open("randomNumberFile", "a")
         file.write(f'{random_number}\n')
+        file.close()
     print("Process completed......")
 
 random_number_file_writer()
